@@ -1,0 +1,147 @@
+.header {
+    border-bottom: 1px solid #ececec;
+    .address {
+        margin-left: auto;
+    }
+}
+
+// .header .address {
+//     margin-left: auto;
+// }
+
+.header .contact-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    margin-right: 90px;
+    animation-duration: 250ms;
+}
+
+.nav-list {
+    display: flex;
+}
+
+
+// .nav-list-item:not(:last-child) {
+//     margin-right: 50px;
+// }
+
+.nav {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+
+    display: flex;
+    align-items: center;
+}
+
+// .nav-list-link:hover,
+// .nav-list-link:focus {
+// color: $accent-color;
+// }
+
+.nav-list-link {
+    display: inline-flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    padding-bottom: 32px;
+    padding-top: 32px;
+
+    color: $title-color;
+    
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.contact-list {
+    display: flex;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    color: $subtitle-color;
+}
+
+.contact-list-link {
+    color: $subtitle-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+    &:hover,
+    &:focus .contact-svg {
+        --color3: $accent-color;
+        fill: $accent-color;
+    }
+}
+
+// .contact-list-link:hover,
+// .contact-list-link:focus {
+//     color: $accent-color;
+// }
+
+.contact-svg {
+    margin-right: 10px;
+}
+
+// .contact-list-link:hover .contact-svg {
+//     --color1: $accent-color;
+//     --color3: $accent-color;
+// }
+
+// .nav-list-item .current {
+//     color: $accent-color;
+// }
+
+// .nav-list-item {
+//     position: relative;
+// }
+
+// .current::after {
+//     position: absolute;
+//     content: '';
+//     left: 0;
+//     bottom: -1px;
+//     width: 100%;
+//     height: 4px;
+//     background: #2196f3;
+//     border-radius: 2px;
+// }
+
+.nav-list-item {
+    position: relative;
+    &:not(:last-child) {
+        margin-right: 50px;
+    }    
+    .current {
+        color: $accent-color;
+        &::after {
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: -1px;
+            width: 100%;
+            height: 4px;
+            background: #2196f3;
+            border-radius: 2px;
+        }
+    }
+}

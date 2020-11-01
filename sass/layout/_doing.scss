@@ -1,0 +1,27 @@
+.doind-list-head::before {
+    display: block;
+    content: '';
+    margin-bottom: 30px;
+    height: 120px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70px;
+}
+  
+.antenna::before {
+    background-image: url(../images/svg/targets/antenna.svg);
+}
+  
+.clock::before {
+    background-image: url(../images/svg/targets/clock.svg);
+}
+  
+.diagram::before {
+    background-image: url(../images/svg/targets/diagram.svg);
+}
+  
+.astronaut::before {
+    background-image: url(../images/svg/targets/astronaut.svg);
+}
