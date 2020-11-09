@@ -1,14 +1,128 @@
+.doind-list-head {
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  
+    color: $title-color;
+}
+  
 .doind-list-head::before {
-    display: block;
     content: '';
+    display: block;
     margin-bottom: 30px;
     height: 120px;
     background-color: #f5f4fa;
     border-radius: 4px;
     background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
     background-size: 70px;
 }
+  
+.doing-list-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+  
+    color: $subtitle-color;
+}
+  
+.doing-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+  
+@media screen and (max-width: 767px) {
+    .doing-list-item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+}
+  
+.doing-list {
+    display: flex;
+    @media screen and (max-width: 1023px) {
+      flex-wrap: wrap;
+    }
+}
+  
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .doing-list-item:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+    .doing-list-item:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+  
+    .doing-list-item {
+      max-width: 354px;
+    }
+}
+  
+@media screen and (min-width: 1024px) {
+    .doing-list-item {
+      max-width: 270px;
+    }
+    .doing-list-item:not(:last-child) {
+      margin-right: 30px;
+    }
+}
+  
+// =============================================================
+
+// .doing-container {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+// }
+
+// .doing-list {
+//     display: flex;
+// }
+
+// .doing-list-item:not(:last-child) {
+//     margin-right: 30px;
+// }
+
+// .doing-list-item {
+//     width: 370px;
+// }
+
+// .doind-list-head {
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.143;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     color: #212121;
+//     margin-bottom: 10px;
+// }
+
+// .doind-list-head::before {
+//     display: block;
+//     content: '';
+//     margin-bottom: 30px;
+//     height: 120px;
+//     background-color: #f5f4fa;
+//     border-radius: 4px;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: 70px;
+// }
+
+// .doing-list-text {
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 1.714;
+//     letter-spacing: 0.03em;
+//     color: #757575;
+// }
   
 .antenna::before {
     background-image: url(../images/svg/targets/antenna.svg);
