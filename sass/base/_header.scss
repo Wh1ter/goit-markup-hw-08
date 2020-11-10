@@ -24,6 +24,26 @@
       }
     }
 }
+
+
+.current {
+  display: inline-block;
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 4px;
+    left: 0;
+    bottom: -5px;
+    @media screen and (min-width: 768px) {
+      bottom: -36px;
+    }
+    width: 100%;
+    border-radius: 2px;
+    background-color: $accent-color;
+  }
+}
   
 .menu-container {
     @media screen and (max-width: 767px) {
