@@ -14,7 +14,7 @@
 <body>
     <header class="header">
         <!--Навигация страницы-->
-        <div class="header-container container">            
+        <div class="container header-container">            
                 <a class="logo-link link animate__pulse" href="index.html" aria-label="логотип вебстудии">
                     <span class="logo">Web</span>
                     <span class="logo-color-header">Studio</span>
@@ -66,7 +66,7 @@
         <!--Заглавная секция HERO-->
         <section class="hero">
             <div class="hero-main container">
-                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+                <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
                 <button class="btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
@@ -93,56 +93,24 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        <!-- <section class="works">
-          <div class="works-section container">
-            <h2 class="works-head">Чем мы занимаемся</h2>
-            <ul class="works-list list">
-                <li class="works-list-item">
-                  <div class="works-list-wrapper>
-                    <img class="doing-list-img" src="./images/pc/box1.jpg" alt="набирает текст" width="370" height="294">
-                    <div class="develops-overley">
-                    <p class="develops-card-title">Десктопные приложения</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="works-list-item">
-                  <div class="works-list-wrapper>
-                    <img class="doing-list-img" src="./images/pc/box2.jpg" alt="смотрит в смартфон" width="370" height="294">
-                    <div class="develops-overley">
-                      <p class="develops-card-title">Мобильные приложения</p>
-                    </div>                    
-                  </div>
-                </li>
-                <li class="works-list-item">
-                  <div class="works-list-wrapper>
-                    <img class="doing-list-img" src="./images/pc/box3.jpg" alt="подбирает цветовую палитру" width="370" height="294">
-                    <div class="develops-overley">
-                      <p class="develops-card-title">Дизайнерские решения</p>
-                    </div>                    
-                  </div>
-                </li>
-            </ul>
-        </div>
-        </section> -->
-        <!--Команда-->
+        </section>        
         <section class="works">
           <div class="container">
             <h2 class="doing-head">Чем мы занимаемся</h2>
             <ul class="works-list list">
-                <li class="doing-list-item doing-overlay">
+                <li class="doing-list-img doing-overlay">
                   <div>
                     <img class="doing-list-img" src="./images/pc/box1.jpg" alt="набирает текст" width="370" height="294">
                     <p class="doing-title">Десктопные приложения</p>
                   </div>
                 </li>
-                <li class="doing-list-item doing-overlay">
+                <li class="doing-list-img doing-overlay">
                   <div>
                     <img class="doing-list-img" src="./images/pc/box2.jpg" alt="смотрит в смартфон" width="370" height="294">
                     <p class="doing-title">Мобильные приложения</p>
                   </div>
                 </li>
-                <li class="doing-list-item doing-overlay">
+                <li class="doing-list-img doing-overlay">
                   <div>
                     <img class="doing-list-img" src="./images/pc/box3.jpg" alt="подбирает цветовую палитру" width="370" height="294">
                     <p class="doing-title">Дизайнерские решения</p>
@@ -389,68 +357,70 @@
             </div>
         </section>
     </main>
-<footer class="footer">
-    <div class="footer-section container">
-      <div class="footer-center">
+    <footer class="footer">
+      <div class="footer-section container">
           <address class="address">
-            <a class="logo-link link" href="index.html" aria-label="логотип вебстудии">
-                <span class="logo">Web</span>
-                <span class="logo-color-footer">Studio</span>
-            </a>
-            <ul class="footer-list list">
-                <!--Где мы-->
-                <li class="footer-list-item">
-                    <a class="footer-list-link-location link" href="https://goo.gl/maps/w4gHtKu6riXwzQQv9" target="_blank">г. Киев, пр-т Леси Украинки, 26</a>
+              <a class="logo-link link" href="index.html" aria-label="логотип вебстудии">
+                  <span class="logo">Web</span>
+                  <span class="logo-color-footer">Studio</span>
+              </a>
+              <ul class="footer-list list">
+                  <!--Где мы-->
+                  <li class="footer-list-item">
+                      <a class="footer-list-link-location link" href="https://goo.gl/maps/w4gHtKu6riXwzQQv9" target="_blank">г. Киев, пр-т Леси Украинки, 26</a>
+                  </li>
+                  <!--Связаться-->
+                  <li class="footer-list-item">
+                      <!-- <address class="address"> -->
+                          <a class="footer-list-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                      <!-- </address> -->
+                  </li>
+                  <li class="footer-list-item">
+                      <!-- <address class="address"> -->
+                          <a class="footer-list-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                      <!-- </address> -->
+                  </li>
+              </ul>
+          </address>
+          <div class="join">
+              <h2 class="join-title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+              <ul class="join-list list">
+                <li class="join-list-item">
+                  <a class="join-list-links" href="">
+                    <svg class="social-join-instagram">
+                      <use href="./images/sprite.svg#icon-instagram">
+                      </use>
+                    </svg>
+                  </a>
                 </li>
-                <!--Связаться-->
-                <li class="footer-list-item">
-                    <a class="footer-list-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <li class="loin-list-item">
+                  <a class="join-list-links" href="">
+                    <svg class="social-join-twitter">
+                      <use href="./images/sprite.svg#icon-twitter">
+                      </use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="footer-list-item">
-                    <a class="footer-list-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                <li class="loin-list-item">
+                  <a class="join-list-links" href="">
+                    <svg class="social-join-facebook">
+                      <use href="./images/sprite.svg#icon-facebook">
+                      </use>
+                    </svg>
+                  </a>
                 </li>
-            </ul>
-        </address>
-        <div class="join">
-            <h2 class="join-title">ПРИСОЕДИНЯЙТЕСЬ</h2>
-            <ul class="join-list list">
-              <li class="join-list-item">
-                <a class="join-list-links" href="">
-                  <svg class="social-join-instagram">
-                    <use href="./images/sprite.svg#icon-instagram">
-                    </use>
-                  </svg>
-                </a>
-              </li>
-              <li class="loin-list-item">
-                <a class="join-list-links" href="">
-                  <svg class="social-join-twitter">
-                    <use href="./images/sprite.svg#icon-twitter">
-                    </use>
-                  </svg>
-                </a>
-              </li>
-              <li class="loin-list-item">
-                <a class="join-list-links" href="">
-                  <svg class="social-join-facebook">
-                    <use href="./images/sprite.svg#icon-facebook">
-                    </use>
-                  </svg>
-                </a>
-              </li>
-              <li class="loin-list-item">
-                <a class="join-list-links" href="">
-                  <svg class="social-join-linkedin">
-                    <use href="./images/sprite.svg#icon-linkedin">
-                    </use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-        </div>
-      </div>
-        <!--Форма подписки футер-->
-        <form class="footer-form">
+                <li class="loin-list-item">
+                  <a class="join-list-links" href="">
+                    <svg class="social-join-linkedin">
+                      <use href="./images/sprite.svg#icon-linkedin">
+                      </use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+          </div>
+          <!--Форма подписки футер-->
+      <form class="footer-form">
           <div class="footer-form-content">
               <label class="footer-form-title" for="mail">Подпишитесь на рассылку
               </label>
@@ -463,9 +433,9 @@
                   </button>
               </div>
           </div>
-       </form>        
-    </div>
-</footer>
+      </form>          
+      </div>
+  </footer>
 <!-- MODAL -->
 <div class="backdrop is-hidden" data-modal>
   <div class="modal-body">

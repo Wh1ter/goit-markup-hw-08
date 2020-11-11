@@ -5,20 +5,6 @@
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (min-width: 768px) {
-  .header {
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
-}
-
-@media screen and (min-width: 768px) and (min-width: 1024px) {
-  .header {
-    padding-top: 29px;
-    padding-bottom: 29px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .header-container {
     display: flex;
@@ -27,10 +13,19 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .header-container {
-    display: flex;
-    align-items: center;
+@media screen and (max-width: 767px) {
+  .menu-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #fff;
+    transform: scale(0);
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+    outline: 1px solid #ececec;
   }
 }
 
@@ -52,38 +47,7 @@
 
 @media screen and (min-width: 768px) {
   .current::after {
-    bottom: -36px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .menu-container {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: #fff;
-    transform: scale(0);
-    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 1000;
-    outline: 1px solid #ececec;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .menu-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .menu-container {
-    justify-content: space-around;
+    bottom: -47px;
   }
 }
 
@@ -262,15 +226,80 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .address-list-link-header:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+  .menu-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .mobile-menu-btn {
+    display: none;
+  }
+  .navigation-list {
+    display: flex;
+    align-items: center;
+  }
+  .navigation-list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .navigation-list-link {
+    font-size: 14px;
+    line-height: 1.142;
+  }
+  .address {
+    text-align: inherit;
+  }
+  .address-link {
+    font-size: 12px;
+    line-height: 1.142;
+  }
   .logo-link {
     margin-right: 88px;
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .logo-link {
-    margin-right: 93px;
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+  .menu-container {
+    justify-content: space-between;
+  }
+  -link {
+    font-size: 14px;
+    line-height: 1.142;
+  }
+  -list-link-header:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.logo-link {
+  margin-right: 93px;
+}
+
+@media screen and (min-width: 1200px) {
+  .address-list-link-header {
+    margin-right: 30px;
+  }
+  .address-list-header {
+    display: flex;
   }
 }
 
@@ -492,6 +521,13 @@ img {
   padding-bottom: 131px;
 }
 
+.join {
+  width: 206px;
+  padding-top: 12px;
+  padding-bottom: 40px;
+  margin-right: 15px;
+}
+
 .footer-list {
   margin-top: 20px;
   margin-right: 70px;
@@ -523,6 +559,12 @@ img {
   background: #2f303a;
 }
 
+.footer-section {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .logo-color-footer {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -537,7 +579,7 @@ img {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .address {
+  .footer-address {
     max-width: 232px;
     width: 100%;
     margin-right: 165px;
@@ -556,7 +598,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .address {
+  .footer-address {
     text-align: initial;
     margin-right: 70px;
   }
@@ -581,7 +623,7 @@ img {
     flex-wrap: nowrap;
     align-items: baseline;
   }
-  .footer-form {
+  .subscribe-form {
     display: flex;
   }
 }
